@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Suggestions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+       .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+       .form-group {
+            margin-bottom: 20px;
+        }
+       .form-control {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+       .checkbox {
+            margin-right: 10px;
+        }
+       .image-upload {
+            margin-top: 20px;
+        }
+       .image-preview {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+       .recommendations {
+            margin-top: 40px;
+        }
+       .recommendation {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+       .recommendation img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fashion Suggestions</h1>
+        <form>
+            <div class="form-group">
+                <label for="clothing-type">Clothing Type:</label>
+                <input type="checkbox" id="clothing-type" name="clothing-type" value="Tops"> Tops
+                <input type="checkbox" id="clothing-type" name="clothing-type" value="Bottoms"> Bottoms
+                <input type="checkbox" id="clothing-type" name="clothing-type" value="Dresses"> Dresses
+            </div>
+            <div class="form-group">
+                <label for="size">Size:</label>
+                <input type="checkbox" id="size" name="size" value="Small"> Small
+                <input type="checkbox" id="size" name="size" value="Medium"> Medium
+                <input type="checkbox" id="size" name="size" value="Large"> Large
+            </div>
+            <div class="form-group">
+                <label for="color">Color:</label>
+                <input type="checkbox" id="color" name="color" value="Red"> Red
+                <input type="checkbox" id="color" name="color" value="Blue"> Blue
+                <input type="checkbox" id="color" name="color" value="Green"> Green
+            </div>
+            <div class="form-group">
+                <label for="pattern">Pattern:</label>
+                <input type="checkbox" id="pattern" name="pattern" value="Stripes"> Stripes
+                <input type="checkbox" id="pattern" name="pattern" value="Polka Dots"> Polka Dots
+                <input type="checkbox" id="pattern" name="pattern" value="Floral"> Floral
+            </div>
+            <div class="form-group">
+                <label for="occasion">Occasion:</label>
+                <input type="checkbox" id="occasion" name="occasion" value="Casual"> Casual
+                <input type="checkbox" id="occasion" name="occasion" value="Formal"> Formal
+                <input type="checkbox" id="occasion" name="occasion" value="Party"> Party
+            </div>
+            <div class="image-upload">
+                <label for="image">Upload Image:</label>
+                <input type="file" id="image" name="image">
+            </div>
+            <div class="image-preview">
+                <img src="" alt="Image Preview">
+            </div>
+            <div class="form-group">
+                <label for="num-recommendations">Number of Recommendations:</label>
+                <input type="number" id="num-recommendations" name="num-recommendations" value="5">
+            </div>
+            <button type="submit">Get Recommendations</button>
+        </form>
+        <div class="recommendations">
+            <h2>
